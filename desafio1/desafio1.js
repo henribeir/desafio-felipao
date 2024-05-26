@@ -1,7 +1,11 @@
+//variável para nome e nível do herói
 let nomeHeroi = "Mark"
 let nivelHeroi = 1001
+
+//constante da frase que em cojunto da variável do nome do herói irá repertir por todo o código
 const frase = "O heroi de nome " +nomeHeroi + " está no nivel "
 
+//estrutura de decisão com a constante em conjunto da nomeclatura do nível de acordo com XP
 if (nivelHeroi <= 1000) {
     console.log(frase + "Ferro")
 } else if (nivelHeroi >= 1001 && nivelHeroi <= 2000) {
