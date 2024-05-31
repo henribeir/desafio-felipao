@@ -1,24 +1,34 @@
-//variável para nome e nível do herói
-let nomeHeroi = "Mark"
-let nivelHeroi = 4234
-let rankHeroi = ""
+//array com dados de nome e xp
+let heroi = [
+    {nome: "Markes", xp: 4234}
+]
 
-//estrutura de decisão para definir o rank de acordo com nível
-if (nivelHeroi <= 1000) {
-    rankHeroi = "Ferro"
-} else if (nivelHeroi >= 1001 && nivelHeroi <= 2000) {
-    rankHeroi = "Bronze"
-} else if (nivelHeroi >= 2001 && nivelHeroi <= 5000) {
-    rankHeroi = "Prata"
-} else if (nivelHeroi >= 5001 && nivelHeroi <= 7000) {
-    rankHeroi = "Ouro"
-} else if (nivelHeroi >= 7001 && nivelHeroi <= 8000) {
-    rankHeroi = "Platina"
-} else if (nivelHeroi >= 9001 && nivelHeroi <= 10000) {
-    rankHeroi = "Imortal"
-} else {
-    rankHeroi = "Radiante"
-}
+//laço de repetição e declaração de variaveis para retornar dados do array
+for (repeticao = 0; repeticao < heroi.length; repeticao++) {
+    let nomeHeroi = heroi[repeticao].nome
+    let xpHeroi = heroi[repeticao].xp
+    let nivelHeroi = ""
+
+    //definir o nivel de acordo com xp
+    if (xpHeroi <= 1000) {
+        nivelHeroi = "Ferro"
+    } else if (xpHeroi >= 1001 && xpHeroi <= 2000) {
+        nivelHeroi = "Bronze"
+    } else if (xpHeroi >= 2001 && xpHeroi <= 5000) {
+        nivelHeroi = "Prata"
+    } else if (xpHeroi >= 5001 && xpHeroi <= 7000) {
+        nivelHeroi = "Ouro"
+    } else if (xpHeroi >= 7001 && xpHeroi <= 8000) {
+        nivelHeroi = "Platina"
+    } else if (xpHeroi >= 9001 && xpHeroi <= 10000) {
+        nivelHeroi = "Imortal"
+    } else {
+        nivelHeroi = "Radiante"
+    }
 
 //mensagem do resultado
-console.log ("O herói de nome " + nomeHeroi + " está no nível de " + rankHeroi)
+console.log ("O herói de nome " + nomeHeroi + " está no nível de " + nivelHeroi)
+    
+
+
+}
